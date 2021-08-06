@@ -1,1 +1,1 @@
-https://4ddy1.github.io/test-web-chat/
+https://4ddy1.github.io/test-web-chat-decentralized/
