@@ -8,7 +8,7 @@ b.on("message", function (address, message) {
 });
 
 document.getElementById("input").onkeyup = function (ev) {
-    if (ev.key == "Enter" && b.lastWireCount) {
+    if (ev.key == "Enter") {
         b.send(ev.target.textContent);
         ev.target.textContent = "";
         ev.preventDefault();
