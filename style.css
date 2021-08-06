@@ -3,7 +3,7 @@ body { background-color: #333;
     padding: 0em 0.25em; 
 }
 
-pre { color: #fff; 
+span { color: #fff; 
     white-space: pre-wrap; 
     word-wrap: break-word; 
     text-shadow: 0 0 10px #ccc; 
