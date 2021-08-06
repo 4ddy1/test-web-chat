@@ -1,5 +1,5 @@
 log("Hello world!");
-var b = Bugout("chat");
+var b = Bugout("chat0001");
 b.on("seen", function (address) { log(address + " [ seen ]"); });
 log(b.address() + "[ me ]");
 
@@ -7,13 +7,10 @@ b.on("message", function (address, message) {
     log(address + ": " + message);
 });
 
-document.getElementById("input").onkeydown = function (ev) {
-    if (ev.code == "NumpadEnter") {
-        if (b.lastWireCount) {
-            b.send(ev.target.textContent);
-            ev.target.textContent = "";
-        }
+document.getElementById("input").onkeyup = function (ev) {
+    if (ev.key == "Enter" && b.lastWireCount) {
+        b.send(ev.target.textContent);
+        ev.target.textContent = "";
         ev.preventDefault();
     }
 }
-
