@@ -8,7 +8,7 @@ b.on("message", function (address, message) {
 });
 
 document.getElementById("input").onkeydown = function (ev) {
-    if (ev.code = "AltLeft") {
+    if (ev.code == "NumpadEnter") {
         if (b.lastWireCount) {
             b.send(ev.target.textContent);
             ev.target.textContent = "";
