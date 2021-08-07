@@ -1,5 +1,5 @@
 log("Hello world!");
-var b = Bugout("SpaceTradersAPI-Chatroom", {announce: ["wss://spacetradersapi-chatbox.herokuapp.com"]});
+var b = Bugout("bittorrent-tracker", {iceServers: [{urls: "stun:server.com:3000"}]});
 b.on("seen", function (address) { log(address + " [ seen ]"); });
 log(b.address() + "[ me ]");
 
