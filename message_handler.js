@@ -1,5 +1,5 @@
 log("Hello world!");
-var b = Bugout("chat0001");
+var b = Bugout("SpaceTradersAPI-Chatroom", {announce: ["wss://spacetradersapi-chatbox.herokuapp.com"]});
 b.on("seen", function (address) { log(address + " [ seen ]"); });
 log(b.address() + "[ me ]");
 
