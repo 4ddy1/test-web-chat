@@ -1,5 +1,5 @@
 log("Hello world!");
-var b = Bugout("bittorrent-tracker", {iceServers: [{urls: "stun:server.com:3000"}]});
+var b = Bugout("bittorrent-tracker", {announce: ["wss://bit-tracker.herokuapp.com/"]});
 b.on("seen", function (address) { log(address + " [ seen ]"); });
 log(b.address() + "[ me ]");
 
