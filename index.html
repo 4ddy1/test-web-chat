@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <link rel="stylesheet" href="node_modules\normalize.css\normalize.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
     <script src="https://chr15m.github.io/bugout/bugout.min.js"></script>
@@ -10,8 +11,19 @@
     <title>chat</title>
   </head>
   <body>
-    <span id="log"></span>
-    <span id="input" contenteditable="true"></span>
+    <!-- <input type="text" id="name1" />
+    <button onclick="btnClick()">sibmit</button> -->
+    <header class="box">
+      <div id="greet" class="box">Welcome to chat</div>
+    </header>
+    <main class="box">
+      <div id="chatBack" class="box">
+        <span id="log" class="box"></span>
+        <span id="input" contenteditable="true" class="box" autofocus></span>
+      </div>
+    </main>
+    <footer class="box"></footer>
   </body>
+  <!-- <script src="userName.js"></script> -->
   <script src="message_handler.js"></script>
 </html>
